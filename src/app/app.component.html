@@ -1,14 +1,20 @@
-<div class="container">
-  <div class="alert alert-success" role="alert">
-    funcionário (a)  <strong>{{nome}}</strong> adicionado com sucesso!
+<div class="p-grid">
+
+  <div class="p-grid-12">
+    <h1>Lançamentos</h1>
   </div>
 
-<div class="mb-3">
-  <label class="form-label">Nome</label>
-  <input type="text" class="form-control" #nomeInput>
+  <div class="p-grid-12 p-fluid">
+    <label>Descrição</label>
+    <input pInputText type="text">
+  </div>
+
+  <div class="p-grid-12">
+    <label style="display: block;">Vencimento</label>
+    <input pInputText type="text" style="width: 95px;">
+
+    <label>até</label>
+    <input pInputText type="text">
 </div>
 
-<button type="button" class="btn btn-primary" (click)="adicionar(nomeInput.value)">Adicionar</button>
 </div>
-
-

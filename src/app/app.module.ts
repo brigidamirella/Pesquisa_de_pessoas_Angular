@@ -1,20 +1,22 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common'
 import { BrowserModule } from '@angular/platform-browser';
-
+import { InputTextModule } from 'primeng/inputtext';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello/hello.component';
-import { BemVindoComponent } from './bem-vindo/bem-vindo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent,
-    BemVindoComponent
+
+
   ],
   imports: [
+    CommonModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InputTextModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
