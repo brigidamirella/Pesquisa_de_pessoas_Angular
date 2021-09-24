@@ -15,6 +15,7 @@ import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos
 import { NavbarComponent } from './navbar/navbar.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { SelectButtonModule } from 'primeng/selectbutton';
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SelectButtonModule } from 'primeng/selectbutton';
     CommonModule,
     CalendarModule,
     BrowserModule,
+    DropdownModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     InputTextModule,
