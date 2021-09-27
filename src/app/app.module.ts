@@ -16,6 +16,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { DropdownModule } from 'primeng/dropdown';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { CurrencyMaskModule } from 'ng2-currency-mask';
+import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,7 @@ import { DropdownModule } from 'primeng/dropdown';
     LancamentosPesquisaComponent,
     NavbarComponent,
     LancamentoCadastroComponent,
+    PessoaCadastroComponent,
 
 
   ],
@@ -40,7 +44,10 @@ import { DropdownModule } from 'primeng/dropdown';
     TabViewModule,
     TooltipModule,
     InputTextareaModule,
-    SelectButtonModule
+    SelectButtonModule,
+    InputNumberModule,
+
+    CurrencyMaskModule
 
   ],
   providers: [],
