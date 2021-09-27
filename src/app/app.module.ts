@@ -1,24 +1,26 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { InputTextModule } from 'primeng/inputtext';
-import {InputTextareaModule} from 'primeng/inputtextarea';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CurrencyMaskModule } from 'ng2-currency-mask';
+
 import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputMaskModule } from 'primeng/inputmask';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { SelectButtonModule } from 'primeng/selectbutton';
 import { TableModule } from 'primeng/table';
 import { TabViewModule } from 'primeng/tabview';
 import { TooltipModule } from 'primeng/tooltip';
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { DropdownModule } from 'primeng/dropdown';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+
 
 @NgModule({
   declarations: [
@@ -32,23 +34,22 @@ import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.compo
   ],
   imports: [
 
-    CommonModule,
-    CalendarModule,
     BrowserModule,
-    DropdownModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
-    InputTextModule,
+
     ButtonModule,
+    CalendarModule,
+    DropdownModule,
+    InputMaskModule,
+    InputNumberModule,
+    InputTextModule,
+    InputTextareaModule,
+    SelectButtonModule,
     TableModule,
     TabViewModule,
     TooltipModule,
-    InputTextareaModule,
-    SelectButtonModule,
-    InputNumberModule,
 
     CurrencyMaskModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
